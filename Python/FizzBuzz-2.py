@@ -7,12 +7,12 @@ def prime_factorization(number: int):
     prime_factors = []
 
     # we need to check the entire number range for possible factors
-    for x in range(2, number + 1):
+    for x in range(2,number + 1):
         if number % x == 0:
             prime = True
 
             # actual factor test can terminate at x/2 (+1 for safety)
-            for y in range(2, (x // 2 + 1)):
+            for y in range(2,(x // 2 + 1)):
                 if x % y == 0:
                     prime = 0
                     break
@@ -25,9 +25,9 @@ def prime_factorization(number: int):
 
 
 # ebic memes
-RESPECT = 'F'
-NICE = '69'
-MEME = '[B]'
+RESPECT ='F'
+NICE ='69'
+MEME ='[B]'
 
 smallest_factors = prime_factorization(4)
 
